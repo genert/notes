@@ -1,0 +1,43 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "gatsby clean && gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genert/notes.git"
+  },
+  "author": "Genert Org <hello@genert.org>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/genert/notes/issues"
+  },
+  "homepage": "https://github.com/genert/notes#readme",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^3.0.4",
+    "gatsby-plugin-mdx": "^2.0.1",
+    "gatsby-plugin-meta-redirect": "^1.1.1",
+    "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-plugin-theme-ui": "^0.3.5",
+    "gatsby-remark-katex": "^4.0.0",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-theme-documentation": "^0.0.27",
+    "katex": "^0.13.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "rehype-slug": "^4.0.1",
+    "remark-math": "^4.0.0",
+    "theme-ui": "^0.3.5"
+  }
+}
