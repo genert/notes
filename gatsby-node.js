@@ -66,11 +66,6 @@ exports.onCreateNode = async ({ node, actions, getNode, createNodeId }) => {
 
   const isIndexPath = (name) => name === 'index' || /readme/i.test(name);
 
-  const toOriginalDocsPath = (node) => {
-    const { dir } = path.parse(node.relativePath);
-    const fullPath = [basePath, dir, node.name];
-    return joinPath(...fullPath).replace(/\\+/g, ``);
-  };
   const toDocsPath = (node) => {
     const { dir } = path.parse(node.relativePath);
     const fullPath = [
@@ -80,6 +75,8 @@ exports.onCreateNode = async ({ node, actions, getNode, createNodeId }) => {
     ].filter(Boolean);
     return joinPath(...fullPath).replace(/\\+/g, ``);
   };
+
+  console.log(node.internal);
 
   // Make sure it's an MDX node
   if (node.internal.type !== `Mdx`) {

@@ -10,16 +10,23 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-mdx`,
-      extensions: ['.mdx', '.md'],
-      gatsbyRemarkPlugins: [
-        {
-          resolve: `gatsby-remark-katex`,
-          options: {
-            strict: `ignore`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
           },
-        },
-      ],
-      remarkPlugins: [require('remark-slug'), require('remark-math')],
+        ],
+        remarkPlugins: [
+          require('remark-slug'),
+          require('remark-math'),
+          require('remark-external-links'),
+          require('remark-footnotes'),
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,

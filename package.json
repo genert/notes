@@ -37,6 +37,8 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "rehype-slug": "^4.0.1",
+    "remark-external-links": "^8.0.0",
+    "remark-footnotes": "^3.0.0",
     "remark-math": "^4.0.0",
     "theme-ui": "^0.3.5"
   }
