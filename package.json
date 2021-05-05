@@ -40,6 +40,6 @@
     "remark-external-links": "^8.0.0",
     "remark-footnotes": "^3.0.0",
     "remark-math": "^4.0.0",
-    "theme-ui": "^0.3.5"
+    "theme-ui": "^0.8.0"
   }
 }
